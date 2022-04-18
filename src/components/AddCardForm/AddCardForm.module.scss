@@ -1,0 +1,85 @@
+.AddCardForm {
+  grid-column: 1 / -1;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  color: #8f949d;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #5f6368;
+  border-radius: 5px;
+  padding: 10px 15px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.AddCardInput {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #8f949d;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.AddCardToolbar {
+  display: flex;
+  gap: 15px;
+}
+.AddCardToolbarItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: #fff;
+  }
+}
+.AddCardItemsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  svg {
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      color: #f2777a;
+    }
+  }
+}
+
+.AddCardItems {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #8f949d;
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.AddCardButtons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}

@@ -1,0 +1,103 @@
+.Card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #111;
+  border-radius: 8px;
+  color: #8f949d;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 0;
+  height: 150px;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .CardMenuTopButtons {
+      opacity: 1;
+    }
+  }
+}
+
+.CardMenuTopButtons {
+  opacity: 0;
+  // display: none;
+  // justify-content: flex-end;
+  margin: 5px 10px 10px 0;
+  width: 100%;
+  svg {
+    margin-left: 10px;
+  }
+  transition: 0.2s all ease-in-out;
+}
+
+.CardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardChevron {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+  //   color: #ffb038;
+}
+
+.CardItemsBox {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0;
+  overflow: auto;
+  width: 100%;
+  //   height: 200px;
+  overflow-x: hidden;
+  box-sizing: content-box;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    outline: none;
+  }
+
+  animation: rotateX 0.3s ease forwards;
+}
+
+.completeItem {
+  text-decoration: line-through;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+  opacity: 1;
+}
+
+.fitContent {
+  height: fit-content;
+}
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}

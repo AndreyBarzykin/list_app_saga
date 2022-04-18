@@ -1,0 +1,19 @@
+.formInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  outline: none;
+  ::placeholder {
+    color: rgb(187, 188, 190);
+    font-size: 15px;
+  }
+  :focus {
+    border: 2px solid #777;
+  }
+  font-family: "Comfortaa", cursive;
+}

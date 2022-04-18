@@ -1,0 +1,102 @@
+.ModalWrapper {
+  width: 600px;
+  height: fit-content;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  color: #000;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ModalBackground {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.ModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.ModalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ModalFormInput {
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 10px 13px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Comfortaa", cursive;
+}
+
+.ModalTopIcons {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 0;
+  z-index: 10;
+}
+
+.ModalHeader {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.ModalHeaderIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ModalTitle {
+  font-size: "2em";
+  color: #f4f4f4;
+}
+
+.ModalBody {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.ModalFooter {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  & > button {
+    margin: 20px 10px 0 10px;
+  }
+}

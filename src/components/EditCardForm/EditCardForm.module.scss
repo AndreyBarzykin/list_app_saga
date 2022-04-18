@@ -1,0 +1,98 @@
+.ModalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ModalFormInput {
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 10px 13px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Comfortaa", cursive;
+}
+
+.CardItemsBox {
+  overflow: auto;
+  // width: 100%;
+  // height: 200px;
+  height: 100%;
+  max-height: 250px;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: slategrey;
+    outline: none;
+  }
+}
+
+.CardItemsInput {
+  width: 90%;
+  margin-bottom: 5px;
+  padding: 3px 13px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+  font-family: "Comfortaa", cursive;
+}
+
+form {
+  width: 85%;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+  }
+  input {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px 13px;
+  }
+  svg {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      color: #f44336;
+    }
+  }
+}
+
+.EditCardToolbar {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.EditCardToolbarItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: #fff;
+  }
+}
